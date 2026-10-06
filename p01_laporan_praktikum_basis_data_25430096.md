@@ -24,16 +24,10 @@ DBMS (seperti MariaDB) menyediakan fitur administrasi pengguna untuk menjaga kea
 
 ## 3. Hasil Langkah Percobaan
 
-- **Inisialisasi Lingkungan & Login MySQL:**  
-  ![Login MySQL](img/p01_login_mysql.png)  
-  *Gambar 3.1: Berhasil login ke MariaDB CLI menggunakan pengguna root.*
-
-- **Pembuatan Database dan Pengguna Dev:**  
-  ```sql
-  CREATE DATABASE akademik_096 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-  CREATE USER 'dev_096'@'localhost' IDENTIFIED BY 'password_dev';
-  GRANT ALL PRIVILEGES ON akademik_096.* TO 'dev_096'@'localhost';
-  FLUSH PRIVILEGES;
+- **Inisialisasi Database Akademik:**  
+  ![alt text](image-8.png)
+  
+  *Gambar 3.1: Pembuatan database akademik_096 dan pengecekan daftar database.*
 
 ---
 
@@ -52,26 +46,23 @@ DBMS (seperti MariaDB) menyediakan fitur administrasi pengguna untuk menjaga kea
 ## 5. Hasil Latihan dan Modifikasi
 
 - **Latihan 1: Pengujian Akun Tamu**
-  ```sql
-  -- Dijalankan sebagai root
-  CREATE USER 'tamu_096'@'localhost' IDENTIFIED BY 'MFikri2030';
-  GRANT SELECT ON Modul_01.* TO 'tamu_096'@'localhost';
-  FLUSH PRIVILEGES;
+  ![alt text](image-3.png)
 
-  -- Uji coba sebagai tamu_096
-  USE Modul_01;
-  CREATE TABLE uji (id INT);
+  *Gambar 5.1: Pengujian pembuatan akun tamu_096 dan galat saat membuat tabel.*
+
+- **Latihan 2: Skrip Idempotent (`p01_lingkungan_25430096.sql`)**
+  ![alt text](image-5.png) 
+
+  *Gambar 5.2: Eksekusi skrip SQL lingkungan secara berulang.*
 
 ---
 
 ## 6. Tugas Mandiri: Milestone Proyek 01
 
-- **Pembuatan Database Proyek & Hak Akses:**  
-  Database `akademik_096` dibuat dengan *charset* `utf8mb4`. Pengguna `dev_096` dibuat dan dikunci aksesnya hanya untuk database `akademik_096`.
-- **Pengujian Pembatasan Akses:**
-  ```sql
-  -- Dijalankan oleh dev_096
-  USE kopma_096;
+- **Pengujian Pembatasan Akses:**  
+  ![alt text](image-6.png) 
+
+  *Gambar 6.1: Pesan galat ERROR 1044 (42000) terbukti dev_096 tidak bisa mengakses database modul_01.*
 
 ---
 
@@ -103,8 +94,12 @@ Praktikum ini menggunakan asisten AI (Gemini) untuk membantu analisis pesan gala
 
 ## 10. Bukti Git
 
+![alt text](image-7.png)
+
+*Gambar 10.1: Bukti eksekusi git add, git commit, dan git push ke repositori GitHub.*
+
 - **Tautan Repositori:** https://github.com/officialdimas456-collab/basisdata-25430096.git  
-- **Hash Commit:** `509e2d6` (Pesan: `p01: inisialisasi repositori dan skrip lingkungan`)
+- **Hash Commit:** `5b95deb` (Pesan: `p01: milestone proyek 1`)
 
 ---
 
