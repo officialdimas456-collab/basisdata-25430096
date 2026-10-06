@@ -1,0 +1,126 @@
+# Laporan Praktikum Basis Data - Pertemuan 01
+
+**Nama:** Muhammad Fikri Misbahudin  
+**NIM:** 25430096  
+**Kelas:** D  
+**Tanggal:** 4 Oktober 2026  
+
+---
+
+## 1. Tujuan Praktikum
+
+- Mengonfigurasi lingkungan kerja praktikum basis data mencakup MySQL/MariaDB, VS Code, dan Git.
+- Memahami administrasi pengguna basis data, pembatasan hak akses (*privileges*), serta pembuatan basis data.
+- Mengimplementasikan konsep skrip SQL yang *idempotent* menggunakan klausa `IF NOT EXISTS`.
+- Mengintegrasikan proyek praktikum ke repositori GitHub serta menyusun laporan berformat Markdown.
+
+---
+
+## 2. Ringkasan Dasar Teori
+
+DBMS (seperti MariaDB) menyediakan fitur administrasi pengguna untuk menjaga keamanan data. Pengguna dapat dibuat menggunakan perintah `CREATE USER` dan diberikan hak akses spesifik (seperti `SELECT`, `CREATE`, atau `ALL PRIVILEGES`) menggunakan `GRANT`. Prinsip *least privilege* diterapkan agar setiap pengguna hanya memiliki akses sesuai kebutuhan tugasnya. Selain itu, eksekusi skrip SQL secara aman membutuhkan sifat *idempotency*, yaitu kemampuan skrip untuk dijalankan berulang kali tanpa menghasilkan galat jika objek basis data sudah ada sebelumnya.
+
+---
+
+## 3. Hasil Langkah Percobaan
+
+- **Inisialisasi Lingkungan & Login MySQL:**  
+  ![Login MySQL](img/p01_login_mysql.png)  
+  *Gambar 3.1: Berhasil login ke MariaDB CLI menggunakan pengguna root.*
+
+- **Pembuatan Database dan Pengguna Dev:**  
+  ```sql
+  CREATE DATABASE akademik_096 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+  CREATE USER 'dev_096'@'localhost' IDENTIFIED BY 'password_dev';
+  GRANT ALL PRIVILEGES ON akademik_096.* TO 'dev_096'@'localhost';
+  FLUSH PRIVILEGES;
+
+---
+
+## 4. Jawaban Titik Analisis
+
+- **Titik Analisis 1 (Akses Pengguna Tamu):**  
+  *Mengapa pengguna `tamu_096` tidak bisa membuat tabel baru?*  
+  **Jawaban:** Pengguna `tamu_096` hanya diberikan hak akses `SELECT` pada basis data. Ketika menjalankan query `CREATE TABLE`, sistem memblokirnya karena perintah `CREATE` membutuhkan hak akses khusus yang tidak dimiliki oleh akun tamu tersebut.
+
+- **Titik Analisis 2 (Penggunaan `IF NOT EXISTS`):**  
+  *Apa fungsi klausa `IF NOT EXISTS` pada skrip pembuatan database dan user?*  
+  **Jawaban:** Klausa tersebut mencegah terjadinya galat saat skrip dijalankan ulang. Jika objek (database/user) sudah ada di dalam server, DBMS hanya akan menampilkan peringatan (*warning*) dan melanjutkan eksekusi skrip tanpa menghentikan proses (*error*).
+
+---
+
+## 5. Hasil Latihan dan Modifikasi
+
+- **Latihan 1: Pengujian Akun Tamu**
+  ```sql
+  -- Dijalankan sebagai root
+  CREATE USER 'tamu_096'@'localhost' IDENTIFIED BY 'MFikri2030';
+  GRANT SELECT ON Modul_01.* TO 'tamu_096'@'localhost';
+  FLUSH PRIVILEGES;
+
+  -- Uji coba sebagai tamu_096
+  USE Modul_01;
+  CREATE TABLE uji (id INT);
+
+---
+
+## 6. Tugas Mandiri: Milestone Proyek 01
+
+- **Pembuatan Database Proyek & Hak Akses:**  
+  Database `akademik_096` dibuat dengan *charset* `utf8mb4`. Pengguna `dev_096` dibuat dan dikunci aksesnya hanya untuk database `akademik_096`.
+- **Pengujian Pembatasan Akses:**
+  ```sql
+  -- Dijalankan oleh dev_096
+  USE kopma_096;
+
+---
+
+## 7. Pembahasan dan Kendala
+
+- **Kendala 1 (`'mysql' is not recognized`):**  
+  Pesan galat muncul karena path lokasi XAMPP (`C:\xampp\mysql\bin`) belum terdaftar di *Environment Variables* sistem Windows.  
+  *Cara Mengatasi:* Berpindah direktori terlebih dahulu ke `C:\xampp\mysql\bin` atau menambahkan path `mysql/bin` ke Sistem Environment Variables Windows.
+- **Kendala 2 (`ERROR 1046: No database selected`):**  
+  Galat terjadi saat mencoba membuat tabel tanpa memilih basis data target terlebih dahulu.  
+  *Cara Mengatasi:* Menjalankan perintah `USE Modul_01;` terlebih dahulu sebelum mengeksekusi instruksi SQL DDL.
+- **Kendala 3 (`error: src refspec main does not match any`):**  
+  Terjadi saat push ke GitHub karena cabang lokal default masih bernama `master` sedangkan target push mengarah ke `main`.  
+  *Cara Mengatasi:* Mengubah nama cabang lokal menggunakan perintah `git branch -M main` sebelum melakukan push.
+
+---
+
+## 8. Kesimpulan
+
+Praktikum ini berhasil mengonfigurasi lingkungan kerja basis data dan integrasi versi Git/GitHub. Pengaturan hak akses pengguna terbukti efektif mengisolasi hak akses data sesuai peran (`dev_096` dan `tamu_096`), serta penerapan klausa `IF NOT EXISTS` berhasil menjadikan skrip SQL bersifat *idempotent* untuk kebutuhan otomasi.
+
+---
+
+## 9. Pernyataan Penggunaan AI
+
+Praktikum ini menggunakan asisten AI (Gemini) untuk membantu analisis pesan galat di terminal, penyusunan skrip SQL *idempotent*, serta pengecekan struktur format Markdown laporan sesuai aturan buku panduan.
+
+---
+
+## 10. Bukti Git
+
+- **Tautan Repositori:** https://github.com/officialdimas456-collab/basisdata-25430096.git  
+- **Hash Commit:** `509e2d6` (Pesan: `p01: inisialisasi repositori dan skrip lingkungan`)
+
+---
+
+## 11. Checklist
+
+| Butir | Yang Harus Ada | Status |
+| :--- | :--- | :---: |
+| Identitas | Nama, NIM, kelas, pertemuan ke-1, tanggal pelaksanaan | [X] |
+| Tujuan | Tujuan praktikum ditulis ulang dengan bahasa sendiri | [X] |
+| Ringkasan Teori | Pemahaman sendiri atas Dasar Teori | [X] |
+| Langkah | Tangkapan layar hasil langkah kunci + keterangan | [X] |
+| Titik Analisis | Semua Titik Analisis dijawab lengkap dengan alasan | [X] |
+| Latihan | Skrip/dokumen hasil latihan beserta bukti berjalan | [X] |
+| Tugas Mandiri | Milestone proyek pertemuan ini: berkas, bukti, dan penjelasan | [X] |
+| Pembahasan & Kendala | Galat yang ditemui, cara membaca, dan cara mengatasinya | [X] |
+| Kesimpulan | Dua sampai empat kalimat dengan bahasa sendiri | [X] |
+| Pernyataan Penggunaan AI | Alat yang dipakai, untuk apa, bagian mana | [X] |
+| Bukti Git | Tautan repositori dan kode commit (hash) | [X] |
+| Keaslian | Tangkapan layar menampilkan akun ber-NIM dan jam sistem | [X] |
