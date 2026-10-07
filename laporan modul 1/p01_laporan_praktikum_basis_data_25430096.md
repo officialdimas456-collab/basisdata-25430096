@@ -107,15 +107,15 @@ Praktikum ini menggunakan asisten AI (Gemini) untuk membantu analisis pesan gala
 
 | Butir | Yang Harus Ada | Status |
 | :--- | :--- | :---: |
-| Identitas | Nama, NIM, kelas, pertemuan ke-1, tanggal pelaksanaan | [X] |
-| Tujuan | Tujuan praktikum ditulis ulang dengan bahasa sendiri | [X] |
-| Ringkasan Teori | Pemahaman sendiri atas Dasar Teori | [X] |
-| Langkah | Tangkapan layar hasil langkah kunci + keterangan | [X] |
-| Titik Analisis | Semua Titik Analisis dijawab lengkap dengan alasan | [X] |
-| Latihan | Skrip/dokumen hasil latihan beserta bukti berjalan | [X] |
-| Tugas Mandiri | Milestone proyek pertemuan ini: berkas, bukti, dan penjelasan | [X] |
-| Pembahasan & Kendala | Galat yang ditemui, cara membaca, dan cara mengatasinya | [X] |
-| Kesimpulan | Dua sampai empat kalimat dengan bahasa sendiri | [X] |
-| Pernyataan Penggunaan AI | Alat yang dipakai, untuk apa, bagian mana | [X] |
-| Bukti Git | Tautan repositori dan kode commit (hash) | [X] |
-| Keaslian | Tangkapan layar menampilkan akun ber-NIM dan jam sistem | [X] |
+| Identitas | Nama, NIM, kelas, pertemuan ke-1, tanggal pelaksanaan | ✔ |
+| Tujuan | Tujuan praktikum ditulis ulang dengan bahasa sendiri | ✔ |
+| Ringkasan Teori | Pemahaman sendiri atas Dasar Teori | ✔ |
+| Langkah | Tangkapan layar hasil langkah kunci + keterangan | ✔ |
+| Titik Analisis | Semua Titik Analisis dijawab lengkap dengan alasan | ✔ |
+| Latihan | Skrip/dokumen hasil latihan beserta bukti berjalan | ✔ |
+| Tugas Mandiri | Milestone proyek pertemuan ini: berkas, bukti, dan penjelasan | ✔ |
+| Pembahasan & Kendala | Galat yang ditemui, cara membaca, dan cara mengatasinya | ✔ |
+| Kesimpulan | Dua sampai empat kalimat dengan bahasa sendiri | ✔ |
+| Pernyataan Penggunaan AI | Alat yang dipakai, untuk apa, bagian mana | ✔ |
+| Bukti Git | Tautan repositori dan kode commit (hash) | ✔ |
+| Keaslian | Tangkapan layar menampilkan akun ber-NIM dan jam sistem | ✔ |
