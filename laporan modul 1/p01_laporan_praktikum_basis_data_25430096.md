@@ -124,8 +124,8 @@ Praktikum ini menggunakan asisten AI (Gemini) untuk membantu analisis pesan gala
 
 | Check | Jenis | Yang Harus Ada | Status |
 | :---: | :--- | :--- | :---: |
-|**Berkas wajib** | `p01_lingkungan_25430096.sql` (dapat dijalankan ulang), `README.md` berisi Identitas Proyek, `.gitignore` | ✔ Terpenuhi |
-|**Bukti tangkapan layar** | `SELECT VERSION(), CURRENT_USER();`, `SELECT @@sql_mode;`, `SHOW DATABASES` sebagai `mhs_096` dan `dev_096`; galat 1044 dan 1142; halaman masuk phpMyAdmin mode `cookie`; `git push` pertama | ✔ Terpenuhi |
-|**Analisis wajib** | Titik Analisis 1–4; perbedaan kode galat 1044, 1045, dan 1142 | ✔ Terpenuhi |
+|**Berkas wajib** | `p01_lingkungan_25430096.sql` (dapat dijalankan ulang), `README.md` berisi Identitas Proyek, `.gitignore` | ✔ |Terpenuhi |
+|**Bukti tangkapan layar** | `SELECT VERSION(), CURRENT_USER();`, `SELECT @@sql_mode;`, `SHOW DATABASES` sebagai `mhs_096` dan `dev_096`; galat 1044 dan 1142; halaman masuk phpMyAdmin mode `cookie`; `git push` pertama | ✔ | Terpenuhi |
+|**Analisis wajib** | Titik Analisis 1–4; perbedaan kode galat 1044, 1045, dan 1142 | ✔ | Terpenuhi |
 
 ---
