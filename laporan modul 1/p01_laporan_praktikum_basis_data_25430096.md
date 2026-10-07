@@ -99,7 +99,7 @@ Praktikum ini menggunakan asisten AI (Gemini) untuk membantu analisis pesan gala
 *Gambar 10.1: Bukti eksekusi git add, git commit, dan git push ke repositori GitHub.*
 
 - **Tautan Repositori:** https://github.com/officialdimas456-collab/basisdata-25430096.git  
-- **Hash Commit:** `5b95deb` (Pesan: `p01: milestone proyek 1`)
+- **Hash Commit:** `f578dfc` (Pesan: `p01_laporan_praktikum_basis_data_25430096.md`)
 
 ---
 
