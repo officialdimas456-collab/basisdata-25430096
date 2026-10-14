@@ -1,0 +1,265 @@
+<mxfile>
+  <diagram name="ERD Akademik Complete 25430096" id="AkademikERDComplete25430096">
+    <mxGraphModel dx="2333" dy="743" grid="1" gridSize="10" guides="1" tooltips="0" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tbl_dosen" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1">
+          <mxGeometry height="150" width="200" x="50" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="row_dos_head" parent="tbl_dosen" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="col_dos_title" parent="row_dos_head" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=center;fontStyle=1" value="dosen" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_dos_pk" parent="tbl_dosen" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="col_dos_pk" parent="row_dos_pk" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;fontStyle=1" value="PK id_dosen" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_dos_nip" parent="tbl_dosen" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_dos_nip" parent="row_dos_nip" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="nip UNIQUE" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_dos_nama" parent="tbl_dosen" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="col_dos_nama" parent="row_dos_nama" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="nama_dosen" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_dos_email" parent="tbl_dosen" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="col_dos_email" parent="row_dos_email" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="email_dosen" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_mahasiswa" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1">
+          <mxGeometry height="180" width="200" x="50" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="row_mhs_head" parent="tbl_mahasiswa" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="col_mhs_title" parent="row_mhs_head" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=center;fontStyle=1" value="mahasiswa" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_mhs_pk" parent="tbl_mahasiswa" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="col_mhs_pk" parent="row_mhs_pk" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;fontStyle=1" value="PK id_mahasiswa" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_mhs_nim" parent="tbl_mahasiswa" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_mhs_nim" parent="row_mhs_nim" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="nim UNIQUE" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_mhs_nama" parent="tbl_mahasiswa" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="col_mhs_nama" parent="row_mhs_nama" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="nama_mahasiswa" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_mhs_kelas" parent="tbl_mahasiswa" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="col_mhs_kelas" parent="row_mhs_kelas" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="kelas" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_mhs_fk_dosen" parent="tbl_mahasiswa" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="col_mhs_fk_dosen" parent="row_mhs_fk_dosen" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="FK id_dosen_wali" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_matakuliah" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1">
+          <mxGeometry height="150" width="200" x="800" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="row_mk_head" parent="tbl_matakuliah" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="col_mk_title" parent="row_mk_head" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=center;fontStyle=1" value="matakuliah" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_mk_pk" parent="tbl_matakuliah" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="col_mk_pk" parent="row_mk_pk" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;fontStyle=1" value="PK id_mk" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_mk_kode" parent="tbl_matakuliah" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_mk_kode" parent="row_mk_kode" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="kode_mk UNIQUE" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_mk_nama" parent="tbl_matakuliah" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="col_mk_nama" parent="row_mk_nama" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="nama_mk" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_mk_sks" parent="tbl_matakuliah" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="col_mk_sks" parent="row_mk_sks" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="sks" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_kelas_kuliah" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1">
+          <mxGeometry height="180" width="220" x="800" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="row_kk_head" parent="tbl_kelas_kuliah" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="col_kk_title" parent="row_kk_head" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=center;fontStyle=1" value="kelas_kuliah" vertex="1">
+          <mxGeometry height="30" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="row_kk_pk" parent="tbl_kelas_kuliah" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="col_kk_pk" parent="row_kk_pk" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;fontStyle=1" value="PK id_kelas" vertex="1">
+          <mxGeometry height="30" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="row_kk_kode" parent="tbl_kelas_kuliah" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_kk_kode" parent="row_kk_kode" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="kode_kelas UNIQUE" vertex="1">
+          <mxGeometry height="30" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="row_kk_fk_mk" parent="tbl_kelas_kuliah" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="col_kk_fk_mk" parent="row_kk_fk_mk" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="FK id_mk" vertex="1">
+          <mxGeometry height="30" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="row_kk_fk_dosen" parent="tbl_kelas_kuliah" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="col_kk_fk_dosen" parent="row_kk_fk_dosen" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="FK id_dosen" vertex="1">
+          <mxGeometry height="30" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_krs" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" vertex="1">
+          <mxGeometry height="180" width="220" x="430" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="row_krs_head" parent="tbl_krs" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="col_krs_title" parent="row_krs_head" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=center;fontStyle=1" value="krs" vertex="1">
+          <mxGeometry height="30" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="row_krs_pk" parent="tbl_krs" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="col_krs_pk" parent="row_krs_pk" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;fontStyle=1" value="PK id_krs" vertex="1">
+          <mxGeometry height="30" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="row_krs_nokrs" parent="tbl_krs" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_krs_nokrs" parent="row_krs_nokrs" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="no_krs UNIQUE" vertex="1">
+          <mxGeometry height="30" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="row_krs_fk_mhs" parent="tbl_krs" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="col_krs_fk_mhs" parent="row_krs_fk_mhs" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="FK id_mahasiswa" vertex="1">
+          <mxGeometry height="30" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="row_krs_fk_dosen" parent="tbl_krs" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="col_krs_fk_dosen" parent="row_krs_fk_dosen" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="FK id_dosen_validasi" vertex="1">
+          <mxGeometry height="30" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="row_krs_tgl" parent="tbl_krs" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="col_krs_tgl" parent="row_krs_tgl" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="tanggal_pengajuan" vertex="1">
+          <mxGeometry height="30" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_detail_krs" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fillColor=#d80073;strokeColor=#A50055;fontColor=#ffffff;" vertex="1">
+          <mxGeometry height="120" width="200" x="600" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="row_dkrs_head" parent="tbl_detail_krs" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="col_dkrs_title" parent="row_dkrs_head" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=center;fontStyle=1" value="detail_krs" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_dkrs_fk_krs" parent="tbl_detail_krs" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="col_dkrs_fk_krs" parent="row_dkrs_fk_krs" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;fontStyle=1" value="PK, FK id_krs" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_dkrs_fk_kelas" parent="tbl_detail_krs" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_dkrs_fk_kelas" parent="row_dkrs_fk_kelas" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;fontStyle=1" value="PK, FK id_kelas" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_nilai_khs" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fillColor=#e3c800;strokeColor=#B09B00;fontColor=#000000;" vertex="1">
+          <mxGeometry height="150" width="200" x="250" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="row_khs_head" parent="tbl_nilai_khs" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="col_khs_title" parent="row_khs_head" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=center;fontStyle=1" value="nilai_khs" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_khs_pk" parent="tbl_nilai_khs" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="col_khs_pk" parent="row_khs_pk" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;fontStyle=1" value="PK id_nilai" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_khs_fk_krs" parent="tbl_nilai_khs" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_khs_fk_krs" parent="row_khs_fk_krs" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="FK id_krs" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_khs_angka" parent="tbl_nilai_khs" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="col_khs_angka" parent="row_khs_angka" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="nilai_angka" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row_khs_huruf" parent="tbl_nilai_khs" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="col_khs_huruf" parent="row_khs_huruf" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" value="nilai_huruf" vertex="1">
+          <mxGeometry height="30" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_dos_mhs" edge="1" parent="1" source="tbl_dosen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;strokeColor=#1ba1e2;" target="tbl_mahasiswa">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_mhs_krs" edge="1" parent="1" source="tbl_mahasiswa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;strokeColor=#a20025;" target="tbl_krs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_dos_krs" edge="1" parent="1" source="tbl_dosen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;strokeColor=#1ba1e2;" target="tbl_krs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_mk_kelas" edge="1" parent="1" source="tbl_matakuliah" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;strokeColor=#60a917;" target="tbl_kelas_kuliah">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_dos_kelas" edge="1" parent="1" source="tbl_dosen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;strokeColor=#1ba1e2;" target="tbl_kelas_kuliah">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_krs_detail" edge="1" parent="1" source="tbl_krs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;strokeColor=#d80073;" target="tbl_detail_krs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_kelas_detail" edge="1" parent="1" source="tbl_kelas_kuliah" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;strokeColor=#60a917;" target="tbl_detail_krs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_krs_khs" edge="1" parent="1" source="tbl_krs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;strokeColor=#e3c800;" target="tbl_nilai_khs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,269 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ERD Kopma Complete 25430096" id="KopmaERDComplete25430096">
+    <mxGraphModel dx="2333" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1000">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- ========================================== -->
+        <!-- 1. TABEL ANGGOTA -->
+        <!-- ========================================== -->
+        <mxCell id="tbl_anggota" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1">
+          <mxGeometry height="180" width="200" x="50" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="row_ang_head" parent="tbl_anggota" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="0" as="geometry" />
+        </mxCell>
+        <mxCell id="col_ang_title" parent="row_ang_head" value="anggota" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=center;fontStyle=1" vertex="1">
+          <mxGeometry width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_ang_pk" parent="tbl_anggota" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="col_ang_pk" parent="row_ang_pk" value="PK id_anggota" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;fontStyle=1" vertex="1">
+          <mxGeometry width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_ang_nim" parent="tbl_anggota" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_ang_nim" parent="row_ang_nim" value="nim_anggota UNIQUE" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_ang_nama" parent="tbl_anggota" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="col_ang_nama" parent="row_ang_nama" value="nama_anggota" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_ang_hp" parent="tbl_anggota" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="col_ang_hp" parent="row_ang_hp" value="no_hp_anggota" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_ang_status" parent="tbl_anggota" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="col_ang_status" parent="row_ang_status" value="status_anggota" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ========================================== -->
+        <!-- 2. TABEL BARANG -->
+        <!-- ========================================== -->
+        <mxCell id="tbl_barang" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1">
+          <mxGeometry height="180" width="200" x="850" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="row_brg_head" parent="tbl_barang" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="0" as="geometry" />
+        </mxCell>
+        <mxCell id="col_brg_title" parent="row_brg_head" value="barang" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=center;fontStyle=1" vertex="1">
+          <mxGeometry width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_brg_pk" parent="tbl_barang" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="col_brg_pk" parent="row_brg_pk" value="PK id_barang" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;fontStyle=1" vertex="1">
+          <mxGeometry width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_brg_kode" parent="tbl_barang" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_brg_kode" parent="row_brg_kode" value="kode_barang UNIQUE" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_brg_nama" parent="tbl_barang" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="col_brg_nama" parent="row_brg_nama" value="nama_barang" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_brg_jual" parent="tbl_barang" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="col_brg_jual" parent="row_brg_jual" value="harga_jual" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_brg_stok" parent="tbl_barang" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="col_brg_stok" parent="row_brg_stok" value="stok" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ========================================== -->
+        <!-- 3. TABEL PEMASOK (SUPPLIER) -->
+        <!-- ========================================== -->
+        <mxCell id="tbl_pemasok" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fillColor=#fa6800;strokeColor=#C75300;fontColor=#ffffff;" vertex="1">
+          <mxGeometry height="150" width="200" x="850" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="row_sup_head" parent="tbl_pemasok" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="0" as="geometry" />
+        </mxCell>
+        <mxCell id="col_sup_title" parent="row_sup_head" value="pemasok" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=center;fontStyle=1" vertex="1">
+          <mxGeometry width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_sup_pk" parent="tbl_pemasok" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="col_sup_pk" parent="row_sup_pk" value="PK id_pemasok" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;fontStyle=1" vertex="1">
+          <mxGeometry width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_sup_nama" parent="tbl_pemasok" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_sup_nama" parent="row_sup_nama" value="nama_pemasok" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_sup_alamat" parent="tbl_pemasok" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="col_sup_alamat" parent="row_sup_alamat" value="alamat_pemasok" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_sup_telp" parent="tbl_pemasok" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="200" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="col_sup_telp" parent="row_sup_telp" value="no_telp_pemasok" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ========================================== -->
+        <!-- 4. TABEL PENJUALAN (TRANSAKSI) -->
+        <!-- ========================================== -->
+        <mxCell id="tbl_penjualan" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" vertex="1">
+          <mxGeometry height="150" width="220" x="430" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="row_pen_head" parent="tbl_penjualan" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="0" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pen_title" parent="row_pen_head" value="penjualan" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=center;fontStyle=1" vertex="1">
+          <mxGeometry width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_pen_pk" parent="tbl_penjualan" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pen_pk" parent="row_pen_pk" value="PK no_nota" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;fontStyle=1" vertex="1">
+          <mxGeometry width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_pen_tgl" parent="tbl_penjualan" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pen_tgl" parent="row_pen_tgl" value="tanggal_transaksi" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_pen_fk_ang" parent="tbl_penjualan" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pen_fk_ang" parent="row_pen_fk_ang" value="FK id_anggota" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_pen_total" parent="tbl_penjualan" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pen_total" parent="row_pen_total" value="total_bayar" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="220" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ========================================== -->
+        <!-- 5. TABEL DETAIL PENJUALAN -->
+        <!-- ========================================== -->
+        <mxCell id="tbl_detail_penjualan" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fillColor=#d80073;strokeColor=#A50055;fontColor=#ffffff;" vertex="1">
+          <mxGeometry height="150" width="220" x="430" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="row_dpen_head" parent="tbl_detail_penjualan" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="0" as="geometry" />
+        </mxCell>
+        <mxCell id="col_dpen_title" parent="row_dpen_head" value="detail_penjualan" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=center;fontStyle=1" vertex="1">
+          <mxGeometry width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_dpen_fk_nota" parent="tbl_detail_penjualan" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="col_dpen_fk_nota" parent="row_dpen_fk_nota" value="PK, FK no_nota" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;fontStyle=1" vertex="1">
+          <mxGeometry width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_dpen_fk_brg" parent="tbl_detail_penjualan" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_dpen_fk_brg" parent="row_dpen_fk_brg" value="PK, FK id_barang" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;fontStyle=1" vertex="1">
+          <mxGeometry width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_dpen_jml" parent="tbl_detail_penjualan" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="col_dpen_jml" parent="row_dpen_jml" value="jumlah_beli" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_dpen_sub" parent="tbl_detail_penjualan" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="col_dpen_sub" parent="row_dpen_sub" value="subtotal" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="220" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ========================================== -->
+        <!-- 6. TABEL PEMBELIAN (TRANSAKSI SUPPLIER) -->
+        <!-- ========================================== -->
+        <mxCell id="tbl_pembelian" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fillColor=#fa6800;strokeColor=#C75300;fontColor=#ffffff;" vertex="1">
+          <mxGeometry height="150" width="220" x="850" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="row_pemb_head" parent="tbl_pembelian" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="0" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pemb_title" parent="row_pemb_head" value="pembelian" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=center;fontStyle=1" vertex="1">
+          <mxGeometry width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_pemb_pk" parent="tbl_pembelian" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pemb_pk" parent="row_pemb_pk" value="PK no_faktur" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;fontStyle=1" vertex="1">
+          <mxGeometry width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_pemb_tgl" parent="tbl_pembelian" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pemb_tgl" parent="row_pemb_tgl" value="tanggal_pembelian" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_pemb_fk_sup" parent="tbl_pembelian" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pemb_fk_sup" parent="row_pemb_fk_sup" value="FK id_pemasok" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="row_pemb_total" parent="tbl_pembelian" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="30" width="220" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="col_pemb_total" parent="row_pemb_total" value="total_pembelian" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=none;align=left;" vertex="1">
+          <mxGeometry width="220" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ========================================== -->
+        <!-- GARIS RELASI / ANAK PANAH FOREIGN KEY -->
+        <!-- ========================================== -->
+        
+        <!-- Anggota -> Penjualan -->
+        <mxCell id="rel_ang_pen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;strokeColor=#1ba1e2;" edge="1" parent="1" source="tbl_anggota" target="tbl_penjualan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Penjualan -> Detail Penjualan -->
+        <mxCell id="rel_pen_dpen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;strokeColor=#a20025;" edge="1" parent="1" source="tbl_penjualan" target="tbl_detail_penjualan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Barang -> Detail Penjualan -->
+        <mxCell id="rel_brg_dpen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;strokeColor=#60a917;" edge="1" parent="1" source="tbl_barang" target="tbl_detail_penjualan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Pemasok -> Pembelian -->
+        <mxCell id="rel_sup_pemb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;strokeColor=#fa6800;" edge="1" parent="1" source="tbl_pemasok" target="tbl_pembelian">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
